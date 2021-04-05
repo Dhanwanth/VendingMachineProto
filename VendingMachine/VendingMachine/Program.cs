@@ -75,8 +75,6 @@ namespace VendingMachine
             return choice;
         }
 
-        
-
         private static int ReadChoice()
         {
             StaticStrings.MainMenu();
