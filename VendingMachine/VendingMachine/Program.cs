@@ -43,7 +43,7 @@ namespace VendingMachine
         private static int ReadCoins()
         {
             Console.WriteLine("    ....Enter number of coins: ");
-            var numberOfCoins = CheckForInteger(Console.ReadLine(),ReadCoins);
+            var numberOfCoins = Utils.CheckForInteger(Console.ReadLine(),ReadCoins);
             return numberOfCoins;
         }
 
@@ -60,8 +60,8 @@ namespace VendingMachine
                 i++;
             }
             var readProduct = Console.ReadLine();
-            int choice = CheckForInteger(readProduct, ReadProductChoice);
-            choice = CheckChoice(choice, i-1, ReadProductChoice);
+            int choice = Utils.CheckForInteger(readProduct, ReadProductChoice);
+            choice = Utils.CheckChoice(choice, i-1, ReadProductChoice);
             var product1 = products.products.ElementAt(choice - 1);
             Console.WriteLine($"Selected Product = {product1.Key}");
             Console.WriteLine($"Selected Product Price = {product1.Value.price}");
@@ -98,37 +98,11 @@ namespace VendingMachine
             Console.WriteLine("        2. Choose a product");
             Console.WriteLine("..................................................................................................... \n\n");
             var input = Console.ReadLine();
-            int choice = CheckForInteger(input, ReadChoice);
-            choice = CheckChoice(choice,2,ReadChoice);
+            int choice = Utils.CheckForInteger(input, ReadChoice);
+            choice = Utils.CheckChoice(choice,2,ReadChoice);
             return choice;
         }
 
-        public static int CheckChoice(int choice, int numberOfChoices, Func<int> func)
-        {
-            if (choice < 1 || choice > numberOfChoices)
-            {
-                Console.Clear();
-                Console.WriteLine("   ....Error Reading Input please enter a valid choice and try again...");
-                choice = func();
-            }
-
-            return choice;
-        }
-
-        public static int CheckForInteger(string input, Func<int> func)
-        {
-            if (!Int32.TryParse(input, out var choice))
-            {
-                Console.Clear();
-                Console.WriteLine("   ....Error Reading Input please enter valid input, try again...");
-                choice = func();
-            }
-            else if(choice <= 0)
-            {
-                Console.WriteLine("... Not a valid choice");
-                choice = func();
-            }
-            return choice;
-        }
+       
     }
 }

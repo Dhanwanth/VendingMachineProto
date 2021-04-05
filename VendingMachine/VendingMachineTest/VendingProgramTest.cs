@@ -16,7 +16,7 @@ namespace VendingMachineTest
             //Arrange
             var choice = "3";
             //Act
-            var t1 = Program.CheckForInteger(choice, returnTwoMockFunction);
+            var t1 = Utils.CheckForInteger(choice, returnTwoMockFunction);
 
             //Assert
             Assert.AreEqual(t1, 3);
@@ -29,7 +29,7 @@ namespace VendingMachineTest
             //Arrange
             var choice = "a";
             //Act
-            var t1 = Program.CheckForInteger(choice, returnTwoMockFunction);
+            var t1 = Utils.CheckForInteger(choice, returnTwoMockFunction);
 
             //Assert
             Assert.AreEqual(t1, 2);
@@ -43,7 +43,7 @@ namespace VendingMachineTest
             var choice = 1;
             var numOfChoices = 2;
             //Act
-            var t1 = Program.CheckChoice(choice,numOfChoices, returnTwoMockFunction);
+            var t1 = Utils.CheckChoice(choice,numOfChoices, returnTwoMockFunction);
 
             //Assert
             Assert.AreEqual(t1, 1);
@@ -57,7 +57,7 @@ namespace VendingMachineTest
             var choice = 1;
             var numOfChoices = 1;
             //Act
-            var t1 = Program.CheckChoice(choice, numOfChoices, returnTwoMockFunction);
+            var t1 = Utils.CheckChoice(choice, numOfChoices, returnTwoMockFunction);
 
             //Assert
             Assert.AreEqual(t1, 1);
@@ -71,7 +71,7 @@ namespace VendingMachineTest
             var choice = 3;
             var numOfChoices = 1;
             //Act
-            var t1 = Program.CheckChoice(choice, numOfChoices, returnTwoMockFunction);
+            var t1 = Utils.CheckChoice(choice, numOfChoices, returnTwoMockFunction);
 
             //Assert
             Assert.AreEqual(t1, 2);
