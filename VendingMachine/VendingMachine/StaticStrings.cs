@@ -3,6 +3,15 @@ namespace VendingMachine
 {
     public class StaticStrings
     {
+        public static void MainMenu()
+        {
+            Console.WriteLine("..................................................................................................... \n\n");
+            Console.WriteLine("        Choose one of the below option(select a number and hit enter");
+            Console.WriteLine("        1. Insert Coins");
+            Console.WriteLine("        2. Choose a product");
+            Console.WriteLine("..................................................................................................... \n\n");
+        }
+
         public static void DisplayCoins()
         {
             Console.WriteLine("    Reference: https://www.usmint.gov/learn/coin-and-medal-programs/coin-specifications");

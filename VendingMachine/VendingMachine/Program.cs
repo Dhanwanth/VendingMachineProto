@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.IO;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 using VendingMachine.Model;
-using VendingMachine.Dto;
 
 namespace VendingMachine
 {
@@ -53,7 +49,7 @@ namespace VendingMachine
             int i = 1;
             Console.WriteLine($"        Total Money Left = {totalMoney} ");
             Console.WriteLine("........Pick Product..........");
-            var products = readProducts().ConfigureAwait(false).GetAwaiter().GetResult();
+            var products = ReadProducts.readProducts().ConfigureAwait(false).GetAwaiter().GetResult();
             foreach (var product in products.products)
             {
                 Console.WriteLine($"    .......{i}. {product.Key} (Price => {product.Value.price})");
@@ -79,30 +75,16 @@ namespace VendingMachine
             return choice;
         }
 
-        private static async Task<Products> readProducts()
-        {
-            string json = string.Empty;
-            using(StreamReader str = new StreamReader("./products.json"))
-            {
-                json = await str.ReadToEndAsync();
-            }
-            var products = JsonConvert.DeserializeObject<Products>(json);
-            return products;
-        }
+        
 
         private static int ReadChoice()
         {
-            Console.WriteLine("..................................................................................................... \n\n");
-            Console.WriteLine("        Choose one of the below option(select a number and hit enter");
-            Console.WriteLine("        1. Insert Coins");
-            Console.WriteLine("        2. Choose a product");
-            Console.WriteLine("..................................................................................................... \n\n");
+            StaticStrings.MainMenu();
             var input = Console.ReadLine();
             int choice = Utils.CheckForInteger(input, ReadChoice);
-            choice = Utils.CheckChoice(choice,2,ReadChoice);
+            choice = Utils.CheckChoice(choice, 2, ReadChoice);
             return choice;
         }
 
-       
     }
 }
