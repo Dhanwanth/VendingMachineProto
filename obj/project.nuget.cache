@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y2x//NLDwwvKq3juIAoDQKvb/nAdi7wcOJMGTnh4qiZq+bnXJ9pnv1fuM4HdLaZIZFAg+WoIsciwEhNNnbhE0A==",
+  "success": true,
+  "projectFilePath": "/Users/dhanwanth/Projects/VendingMachine/VendingMachine/VendingMachine.csproj",
+  "expectedPackageFiles": [
+    "/Users/dhanwanth/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
