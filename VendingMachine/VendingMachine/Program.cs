@@ -9,7 +9,7 @@ using VendingMachine.Dto;
 
 namespace VendingMachine
 {
-    class Program
+    public class Program
     {
         private static double totalMoney { get; set; }
         private static List<Coin> Coins { get; set; }
@@ -18,7 +18,7 @@ namespace VendingMachine
         {
             Console.Clear();
             Console.WriteLine("Vending Machine!");
-            WriteHeaders();
+            StaticStrings.WriteHeaders();
             StaticStrings.DisplayCoins();
             Console.WriteLine($"Total Money(Credited) = {totalMoney}");
 
@@ -71,6 +71,9 @@ namespace VendingMachine
             {
                 Console.WriteLine($"Product dispensed successfully.......{product1.Key}");
                 totalMoney = totalMoney - product1.Value.price;
+                Coins = new List<Coin>();
+                AcceptCoins.TotalMoney = totalMoney;
+                AcceptCoins.Coins = Coins;
                 Console.WriteLine($"Remaining Amount: {totalMoney}");
             }
             return choice;
@@ -85,13 +88,6 @@ namespace VendingMachine
             }
             var products = JsonConvert.DeserializeObject<Products>(json);
             return products;
-        }
-        private static void WriteHeaders()
-        {
-            Console.WriteLine("\n ................................................................................................... \n");
-            Console.WriteLine("  This Vending machine assumes that user enter the dimensions of the coins to insert the coin");
-            Console.WriteLine("  The size of the coins are given below for reference");
-            Console.WriteLine("..................................................................................................... \n\n");
         }
 
         private static int ReadChoice()

@@ -2,24 +2,24 @@
   <MonoDevelop.Ide.ItemProperties.VendingMachine PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="VendingMachine/Program.cs">
     <Files>
-      <File FileName="VendingMachine/Program.cs" Line="136" Column="10" />
-      <File FileName="VendingMachine/Model/ProductPrice.cs" />
-      <File FileName="VendingMachine/Model/Coin.cs" />
-      <File FileName="VendingMachine/Model/products.cs" />
-      <File FileName="VendingMachine/products.json" />
-      <File FileName="VendingMachine/Dto/CoinDimension.cs" />
-      <File FileName="VendingMachine/Dto/CoinType.cs" />
-      <File FileName="VendingMachine/AcceptCoins.cs" />
-      <File FileName="VendingMachine/StaticStrings.cs" />
+      <File FileName="VendingMachineTest/UnitTest1.cs" Line="38" Column="1" />
+      <File FileName="VendingMachine/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="VendingMachine" expanded="True" selected="True">
+          <Node name="VendingMachine" expanded="True">
             <Node name="VendingMachine" expanded="True">
-              <Node name="Dto" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="VendingMachineTest" expanded="True" />
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="VendingMachine" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -27,9 +27,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/dhanwanth/Projects/VendingMachine/VendingMachine/AcceptCoins.cs" relfile="VendingMachine/AcceptCoins.cs" line="47" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

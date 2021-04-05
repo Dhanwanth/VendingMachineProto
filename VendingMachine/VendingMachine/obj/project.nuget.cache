@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y2x//NLDwwvKq3juIAoDQKvb/nAdi7wcOJMGTnh4qiZq+bnXJ9pnv1fuM4HdLaZIZFAg+WoIsciwEhNNnbhE0A==",
+  "dgSpecHash": "Y92HVl87AHP+85pa/xZT9rwakptnjE+IshZGHWUCZVS7YPd5rjXyDDpJE74kmYDOdmimTbdxOXyQvzeRIoG1fg==",
   "success": true,
-  "projectFilePath": "/Users/dhanwanth/Projects/VendingMachine/VendingMachine/VendingMachine.csproj",
+  "projectFilePath": "/Users/dhanwanth/Desktop/VendingMachine/VendingMachineProto/VendingMachine/VendingMachine/VendingMachine.csproj",
   "expectedPackageFiles": [
     "/Users/dhanwanth/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
   ],

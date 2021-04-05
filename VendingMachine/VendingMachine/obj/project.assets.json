@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dhanwanth/Projects/VendingMachine/VendingMachine/VendingMachine.csproj",
+      "projectUniqueName": "/Users/dhanwanth/Desktop/VendingMachine/VendingMachineProto/VendingMachine/VendingMachine/VendingMachine.csproj",
       "projectName": "VendingMachine",
-      "projectPath": "/Users/dhanwanth/Projects/VendingMachine/VendingMachine/VendingMachine.csproj",
+      "projectPath": "/Users/dhanwanth/Desktop/VendingMachine/VendingMachineProto/VendingMachine/VendingMachine/VendingMachine.csproj",
       "packagesPath": "/Users/dhanwanth/.nuget/packages/",
-      "outputPath": "/Users/dhanwanth/Projects/VendingMachine/VendingMachine/obj/",
+      "outputPath": "/Users/dhanwanth/Desktop/VendingMachine/VendingMachineProto/VendingMachine/VendingMachine/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/dhanwanth/.config/NuGet/NuGet.Config"

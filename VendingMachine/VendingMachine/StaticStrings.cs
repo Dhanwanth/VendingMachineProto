@@ -20,5 +20,12 @@ namespace VendingMachine
                 "\n        Thickness => (1.75 mm)");
         }
 
+        public static void WriteHeaders()
+        {
+            Console.WriteLine("\n ................................................................................................... \n");
+            Console.WriteLine("  This Vending machine assumes that user enter the dimensions of the coins to insert the coin");
+            Console.WriteLine("  The size of the coins are given below for reference");
+            Console.WriteLine("..................................................................................................... \n\n");
+        }
     }
 }
