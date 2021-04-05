@@ -107,7 +107,7 @@ namespace VendingMachine
             return choice;
         }
 
-        private static int CheckChoice(int choice, int numberOfChoices, Func<int> func)
+        public static int CheckChoice(int choice, int numberOfChoices, Func<int> func)
         {
             if (choice < 1 || choice > numberOfChoices)
             {
@@ -119,7 +119,7 @@ namespace VendingMachine
             return choice;
         }
 
-        private static int CheckForInteger(string input, Func<int> func)
+        public static int CheckForInteger(string input, Func<int> func)
         {
             if (!Int32.TryParse(input, out var choice))
             {

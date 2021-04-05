@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{334728B8-9E04-44F3-B212-451172A0DB13}|Default">
+  <MonoDevelop.Ide.ItemProperties.VendingMachine PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="VendingMachine" expanded="True" selected="True">
+            <Node name="VendingMachine" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

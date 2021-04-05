@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{4EA7DFB6-EF29-4C12-88E6-E6ABA4B4D9C8}|Default">
+  <MonoDevelop.Ide.ItemProperties.VendingMachine PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VendingMachine/Program.cs">
+    <Files>
+      <File FileName="VendingMachine/Program.cs" Line="136" Column="10" />
+      <File FileName="VendingMachine/Model/ProductPrice.cs" />
+      <File FileName="VendingMachine/Model/Coin.cs" />
+      <File FileName="VendingMachine/Model/products.cs" />
+      <File FileName="VendingMachine/products.json" />
+      <File FileName="VendingMachine/Dto/CoinDimension.cs" />
+      <File FileName="VendingMachine/Dto/CoinType.cs" />
+      <File FileName="VendingMachine/AcceptCoins.cs" />
+      <File FileName="VendingMachine/StaticStrings.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="VendingMachine" expanded="True" selected="True">
+            <Node name="VendingMachine" expanded="True">
+              <Node name="Dto" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/dhanwanth/Projects/VendingMachine/VendingMachine/AcceptCoins.cs" relfile="VendingMachine/AcceptCoins.cs" line="47" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
